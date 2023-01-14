@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "dev-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "give-me-a-joke": "^0.5.1"
+  }
+}
