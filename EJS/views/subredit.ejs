@@ -3,9 +3,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subredit: <%= subredit %></title>
+    <title>Subredit: <%= name %></title>
   </head>
   <body>
-    <h1>Browsing <%= subredit %> subredit</h1>
+    <h1>Browsing <%= name %> subredit</h1>
+    <h2><%= description %></h2>
+    <p><%= subscribers %> total subscribers</p>
+    <% posts.forEach(post => { %>
+    <article>
+      <p><%= post.title %> - <b><%= post.author %></b></p>
+      <% if (post.img) { %>
+      <img src="<%= post.img %>" alt="" />
+      <% } %>
+    </article>
+    <% }) %>
   </body>
 </html>
